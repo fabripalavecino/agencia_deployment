@@ -1,0 +1,32 @@
+extends ../layout/index
+block slider
+    .slider
+        h1 Rio de Janeiro
+        em aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales odio leo, a congue odio facilisis gravida. Curabitur laoreet mollis tempus. Curabitur nunc purus, viverra ac purus eget, lacinia malesuada nunc. Phasellus at quam lobortis, consectetur urna vitae, convallis nisl.
+                p Fusce mollis quam et porttitor mollis. Donec ornare luctus nisi ac posuere. Etiam accumsan sed odio in malesuada. Integer posuere, lorem vulputate bibendum pellentesque, mauris nisi varius sapien, ut iaculis augue justo at felis. 
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", class="img-fluid")
+        h2.text-center.mb-5 Próximos Viajes
+        include ../layout/partials/viajes
+        
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3  5% de Descuento
+                        p.titulo Viaje a Canada
+                        p.fecha 20 de Junio de 2020 - 29 de Junio de 2020
+                        p.precio $2,500 USD
+    .container
+        h2.text-center.my-5 Testimoniales
+        include ../layout/partials/testimoniales
+ 
+
